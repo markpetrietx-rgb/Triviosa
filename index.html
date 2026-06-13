@@ -1100,7 +1100,7 @@ function showCoinResult() {
   const iGoFirst = G.firstPlayer === myRole;
   coin.textContent = iGoFirst ? '⭐' : '😅';
   G.iGoFirst = iGoFirst;
-  result.innerHTML = `<div style="font-family:'Bebas Neue',cursive;font-size:32px;color:${iGoFirst ? 'var(--gold)' : 'var(--gray)'};">${iGoFirst ? 'YOU GO FIRST!' : G.oppName + ' GOES FIRST!'}</div><div style="font-size:13px;color:var(--gray);margin-top:8px;">${iGoFirst ? 'You'll pick first in Round 1' : 'They'll pick first in Round 1'}</div>`;
+  result.innerHTML = `<div style="font-family:'Bebas Neue',cursive;font-size:32px;color:${iGoFirst ? 'var(--gold)' : 'var(--gray)'};">${iGoFirst ? 'YOU GO FIRST!' : G.oppName + ' GOES FIRST!'}</div><div style="font-size:13px;color:var(--gray);margin-top:8px;">${iGoFirst ? 'You go first in Round 1' : 'They go first in Round 1'}</div>`;
   showScreen('screen-coinflip');
   setTimeout(() => { btn.style.display = 'block'; }, 800);
   if (!G.isHost) {
